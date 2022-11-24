@@ -70,3 +70,8 @@ variable "aws_default_region" {
     error_message = "The variable aws_default_region must be longer than 8 chars and meet the format of [[:alpha:]]+-[[:alpha:]]+-[0-9]."
   }
 }
+
+variable "tfc_oauth_token" {
+  type = string
+  description = "Oauth token ID for VCS provider"
+}
