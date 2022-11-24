@@ -1,3 +1,29 @@
+##test123
+terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    tfe   = "= 0.39.0"
+    github = {
+      source  = "integrations/github"
+      version = "= 4.31.0"
+    }
+  }
+}
+
+locals {
+  ##this can be changed to switch between A/B github connection.
+  tfc_oauth_token = tfe_oauth_client.github-b.oauth_token_id
+}
+
+provider "tfe" {
+  token = var.tfe_token
+}
+
+provider "github" {
+  token = var.github_personal_token
+}
+
+
 locals {
   # Take a directory of YAML files, read each one that matches naming pattern and bring them in to Terraform's native data set
   inputvcsworkspacevar = [for f in fileset(path.module, "vcs-connected-workspaces/{workspace}*.yaml") : yamldecode(file(f))]
