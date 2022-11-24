@@ -1,0 +1,10 @@
+name: dev-mongodb-atlas-wowstore
+version: 1.1.8
+description: this is a dev workspace for wowstore
+vcsbranch: 
+vcsworkingdirectory: 
+tags:
+  - aws
+  - mongodbatlas
+  - dev
+  - wowstore
