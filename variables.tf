@@ -80,9 +80,8 @@ variable "github_owner" {
   type = string
   description = "github account to create new repo"
 }
-/*
+
 variable "template_repo" {
   type = string
   description = "github template repository for the new repo"
 }
-*/
