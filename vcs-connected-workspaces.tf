@@ -24,5 +24,5 @@ module "vcs-connected-workspace" {
   vcsworkingdirectory   = each.value.vcsworkingdirectory
   // Patrick specific
   github_owner = var.github_owner
-  template_repo = var.template_repo
+//  template_repo = var.template_repo
 }
