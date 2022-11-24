@@ -43,7 +43,7 @@ module "vcs-connected-workspace" {
   tags                  = each.value.tags
   vcsbranch             = each.value.vcsbranch
   vcsworkingdirectory   = each.value.vcsworkingdirectory
-  // Patrick specific
+  // Github and Template specific
   github_owner = var.github_owner
   template_repo = var.template_repo
 }
