@@ -47,18 +47,6 @@ variable "gitlab_personal_token" {
   }
 }
 
-variable "snyk_hmac_key" {
-  type        = string
-  description = "HMAC key for Sync.io integration."
-}
-
-variable "infracost_hmac_key" {
-  type        = string
-  description = "HMAC key for infracost.io integration."
-}
-
-
-
 variable "organization" {
   type        = string
   description = "Name of TFC/E organization"
